@@ -1,0 +1,29 @@
+.banco{
+    position: relative;
+    background: #11053b;
+    font-size: 30px;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.banco h1{
+    position: relative;
+    z-index: 3;
+}
+.banco::after{
+    content: '';
+    background: #200974;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+}
+.botao__armazenar,.botao__saque{
+    background: #398900;
+    color: #fff;
+}
+.botao__armazenar:active,.botao__saque:active{
+    background: red;
+}

@@ -1,0 +1,34 @@
+@import url('../../style/banco/style.css');
+.cartao{
+    position: relative;
+    background: #11053b;
+    z-index: -2;
+    padding: 2em 1.2em;
+    font-size: 20px;
+    color: #fff;
+    width: 30%;
+
+}
+.cartao::after{
+    content: 'Visa';
+    background: #200974;
+    z-index: -1;
+    top: 0;
+    padding: 0 8px;
+    right: 0;
+    position: absolute;
+    height: 35px;
+    width: 100%;
+}
+.cartao::before{
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    background: #8f7c01;
+    height: 50px;
+    width: 50px;
+}
+.cartao__texto{
+    padding: 0;
+}
